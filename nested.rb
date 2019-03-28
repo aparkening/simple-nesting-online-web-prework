@@ -39,6 +39,24 @@ def alan_kay_is_known_for
   return programmer_hash[:alan_kay][:known_for]
 end
 
+
+
+
+  describe "#dennis_ritchies_language" do 
+    it "operates on the programmer_hash and returns the value of Dennis Ritchie's language as a string" do 
+      expect(dennis_ritchies_language).to eq("C")
+    end
+  end
+
+  describe "#adding_matz" do 
+    it "operates on the programmer_hash and adds a key/value pair to the top level of the hash, returning the newly-added-to hash" do 
+      expect(adding_matz.keys).to include(:yukihiro_matsumoto)
+    end
+  end
+
+
+
+# # Return value of Alan Kay's :known_for key
 def dennis_ritchies_language
 	programmer_hash = 
  		{
