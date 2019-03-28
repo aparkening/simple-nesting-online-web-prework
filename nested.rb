@@ -16,7 +16,7 @@ def hopper
           :languages => ["C"]
         }
      }
-  return programmer_hash[:grace_hopper]
+  programmer_hash[:grace_hopper]
 end
 
 # Return value of Alan Kay's :known_for key
@@ -36,7 +36,7 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
-  return programmer_hash[:alan_kay][:known_for]
+  programmer_hash[:alan_kay][:known_for]
 end
 
 # Return value of Dennis Ritchie's :languages as string
@@ -56,7 +56,7 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
-  return programmer_hash[:dennis_ritchie][:languages][0]
+  programmer_hash[:dennis_ritchie][:languages][0]
 end
 
 # Add Matz key/value pair to programmer_hash and return
@@ -86,14 +86,6 @@ def adding_matz
 end
 
 # Change Allan Kay :known_for and return 
-
-describe "#changing_alan" do 
-    it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" do 
-      expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
-    end
-  end
-
-
 def changing_alan
 	programmer_hash = 
  		{
@@ -109,10 +101,9 @@ def changing_alan
           :known_for => "Unix",
           :languages => ["C"]
         }
-     }
-     #change what Alan Kay is :known_for to the value of the alans_new_info variable. 
-     alans_new_info = "GUI"
-     
+    }
+    #change what Alan Kay is :known_for to the value of the alans_new_info variable. 
+    alans_new_info = "GUI"
     programmer_hash[:alan_kay][:known_for] = alans_new_info
 end
 
@@ -123,6 +114,7 @@ end
       expect(adding_to_dennis[:dennis_ritchie][:languages][1]).to include("Assembly")
     end
     
+# Add "Assembly" to Dennis Ritchie's :languages
 def adding_to_dennis
 	programmer_hash = 
  		{
@@ -138,6 +130,6 @@ def adding_to_dennis
           :known_for => "Unix",
           :languages => ["C"]
         }
-     }
-
+    }
+    programmer_hash[:dennis_ritchie][:languages] = alans_new_info
 end
