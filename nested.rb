@@ -1,3 +1,4 @@
+binding.pry
 
 # Return value of :grace_hopper key
 def hopper
