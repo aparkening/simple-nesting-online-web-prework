@@ -16,17 +16,9 @@ def hopper
           :languages => ["C"]
         }
      }
-
   return programmer_hash[:grace_hopper]
 end
 
-
-  describe "#hopper" do 
-    it "operates on the programmer_hash and returns the value of the :grace_hopper key" do
-      expect(hopper).to eq({:known_for => "COBOL", :languages => ["COBOL", "FORTRAN"]})
-
-    end
-  end
 
   describe "#alan_kay_is_known_for" do
     it "operates on the programmer_hash and returns the value of what Alan Kay is known for" do 
@@ -37,6 +29,7 @@ end
 
 end
 
+# Return value of Alan Kay's :known_for key
 def alan_kay_is_known_for
 	# What combination of keys would you use to return the value of the :known_for key of :alan_kay?
 	
@@ -55,6 +48,9 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
+     
+       return programmer_hash[:grace_hopper]
+     
 end
 
 def dennis_ritchies_language
