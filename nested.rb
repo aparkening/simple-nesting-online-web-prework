@@ -85,6 +85,7 @@ def adding_matz
   }
 end
 
+# Add Matz key/value pair to programmer_hash and return
 def changing_alan
 	programmer_hash = 
  		{
