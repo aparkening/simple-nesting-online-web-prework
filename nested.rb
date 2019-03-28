@@ -132,4 +132,7 @@ def adding_to_dennis
     
     # Return :languages
     programmer_hash[:dennis_ritchie][:languages]
+    
+    binding.pry
+
 end
