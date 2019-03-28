@@ -19,16 +19,6 @@ def hopper
   return programmer_hash[:grace_hopper]
 end
 
-
-  describe "#alan_kay_is_known_for" do
-    it "operates on the programmer_hash and returns the value of what Alan Kay is known for" do 
-      expect(alan_kay_is_known_for).to eq("Object Orientation")
-    end 
-  end
-
-
-end
-
 # Return value of Alan Kay's :known_for key
 def alan_kay_is_known_for
 	programmer_hash = 
