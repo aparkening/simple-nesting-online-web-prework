@@ -39,17 +39,7 @@ def alan_kay_is_known_for
   return programmer_hash[:alan_kay][:known_for]
 end
 
-
-
-  describe "#adding_matz" do 
-    it "operates on the programmer_hash and adds a key/value pair to the top level of the hash, returning the newly-added-to hash" do 
-      expect(adding_matz.keys).to include(:yukihiro_matsumoto)
-    end
-  end
-
-
-
-# # Return value of Dennis Ritchie's :languages as string
+# Return value of Dennis Ritchie's :languages as string
 def dennis_ritchies_language
 	programmer_hash = 
  		{
@@ -69,13 +59,8 @@ def dennis_ritchies_language
   return programmer_hash[:dennis_ritchie][:languages][0]
 end
 
+# Add Matz key/value pair to programmer_hash
 def adding_matz
-# add the following information to the top level of programmer_hash
-# :yukihiro_matsumoto => {
-#   :known_for => "Ruby",
-#    :languages => ["LISP", "C"]
-# }
-
 	programmer_hash = 
  		{
         :grace_hopper => {
@@ -91,6 +76,14 @@ def adding_matz
           :languages => ["C"]
         }
      }
+     
+  programmer_hash[]
+
+# add the following information to the top level of programmer_hash
+# :yukihiro_matsumoto => {
+#   :known_for => "Ruby",
+#    :languages => ["LISP", "C"]
+# }
 
     
 end
