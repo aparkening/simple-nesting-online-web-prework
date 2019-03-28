@@ -85,7 +85,15 @@ def adding_matz
   }
 end
 
-# Add Matz key/value pair to programmer_hash and return
+# Change Allan Kay :known_for and return 
+
+describe "#changing_alan" do 
+    it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" do 
+      expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
+    end
+  end
+
+
 def changing_alan
 	programmer_hash = 
  		{
@@ -105,9 +113,23 @@ def changing_alan
      #change what Alan Kay is :known_for to the value of the alans_new_info variable. 
      alans_new_info = "GUI"
      
+    programmer_hash = {
+    :yukihiro_matsumoto => {
+      :known_for => "Ruby",
+      :languages => ["LISP", "C"]
+    }
+  }
+     
      
 end
 
+
+
+  describe "#adding_to_dennis" do 
+    it "operates on the programmer_hash and adds 'Assembly' to Dennis Ritchie's languages, returning the newly-added-to-hash" do 
+      expect(adding_to_dennis[:dennis_ritchie][:languages][1]).to include("Assembly")
+    end
+    
 def adding_to_dennis
 	programmer_hash = 
  		{
