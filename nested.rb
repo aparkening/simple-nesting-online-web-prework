@@ -86,7 +86,7 @@ def adding_matz
   }
 end
 
-# Change Allan Kay :known_for and return 
+# Change Allan Kay :known_for and return changed hash
 def changing_alan
 	programmer_hash = 
  		{
@@ -107,10 +107,11 @@ def changing_alan
     alans_new_info = "GUI"
     programmer_hash[:alan_kay][:known_for] = alans_new_info
     
+    # Return changed hash
     programmer_hash
 end
 
-# Add "Assembly" to Dennis Ritchie's :languages
+# Add "Assembly" to Dennis Ritchie's :languages; return new :languages value
 def adding_to_dennis
 	programmer_hash = 
  		{
@@ -129,8 +130,6 @@ def adding_to_dennis
     }
     programmer_hash[:dennis_ritchie][:languages][1] = "Assembly"
     
-    
-        
-    binding.pry
-    
+    # Return :languages
+    programmer_hash[:dennis_ritchie][:languages]
 end
