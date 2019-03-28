@@ -59,7 +59,7 @@ def dennis_ritchies_language
   return programmer_hash[:dennis_ritchie][:languages][0]
 end
 
-# Add Matz key/value pair to programmer_hash
+# Add Matz key/value pair to programmer_hash and return
 def adding_matz
 	programmer_hash = 
  		{
@@ -77,7 +77,7 @@ def adding_matz
         }
      }
      
-  programmer_hash[]
+  programmer_hash[:yukihiro_matsumoto] = 
 
 # add the following information to the top level of programmer_hash
 # :yukihiro_matsumoto => {
